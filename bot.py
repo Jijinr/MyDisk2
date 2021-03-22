@@ -23,8 +23,8 @@ async def handler(event):
         
 @client.on(events.NewMessage(pattern='/url'))
 async def handler(event):
-    link =event.text.split(' ')[1]
-    l =event.text.split(' ')[2]
+    link =event.text.split('|')[1]
+    l =event.text.split('|')[2]
     chat = await event.get_chat()
     
     s = f"http://pdisk.net/api/ndisk_manager/video/create?link_type=link&content_src={link}&source=2000&uid=35989439&title={l}&description=telegram"
