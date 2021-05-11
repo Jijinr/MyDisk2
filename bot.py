@@ -13,7 +13,7 @@ mega = Mega()
 m = mega.login()
 #from flask import request
 
-client = TelegramClient('Tamilmv',1667813,"1f6921c27bf6cd01aba471a14ff33bcb").start(bot_token="1629668032:AAFBZ-JS7fxlTfvQNpSJYO-YSk6iGFvWvsU")
+client = TelegramClient('Tamilmv',1064529,"7ce9113e5ac18ab3cf866c0cfdf34fcc").start(bot_token="1788034281:AAGrfW7j4WPTnqKQdV-WMwlzJYO6nOifQPE")
 
 @client.on(events.NewMessage(pattern='/diskusage'))
 async def handler(event):
